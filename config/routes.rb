@@ -3,6 +3,9 @@ Claysform::Application.routes.draw do
 
   resources :resumes
   root :to => 'Home#index'
+
+  match '/form' => 'home#index'
+  match '/form2' => 'pages#form2'
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
