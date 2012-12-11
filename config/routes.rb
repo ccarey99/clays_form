@@ -1,10 +1,12 @@
 Claysform::Application.routes.draw do
-  get "home/index"
+  get "pages/home"
+
+  get "pages/form2"
 
   resources :resumes
-  root :to => 'Home#index'
+  root :to => 'pages#home'
 
-  match '/form' => 'home#index'
+  match '/form' => 'pages#home'
   match '/form2' => 'pages#form2'
   # The priority is based upon order of creation:
   # first created -> highest priority.
